@@ -1,0 +1,47 @@
+{
+  "name": "redux-create-api-action-creator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "redux-create-api-action-creator.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel redux-create-api-action-creator.es6 -o redux-create-api-action-creator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iofjuupasli/redux-create-api-action-creator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iofjuupasli/redux-create-api-action-creator/issues"
+  },
+  "homepage": "https://github.com/iofjuupasli/redux-create-api-action-creator#readme",
+  "babel": {
+    "presets": [
+      "stage-0",
+      "latest"
+    ],
+    "plugins": [
+      "transform-class-properties",
+      "transform-es2015-modules-umd"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "no-console": 2
+    },
+    "parser": "babel-eslint"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-eslint": "^7.0.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.12.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint": "^3.8.0",
+    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-plugin-import": "^2.0.1"
+  }
+}
